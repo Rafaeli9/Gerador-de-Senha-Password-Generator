@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/dadd998619.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="pw-container">
+    <div class="title">
+      <h1>Gerador de Senha<i id="icon" class="fas fa-lock"></i></h1>
+    </div>
+    <div class="pw-header">
+      <div class="pw">
+        <span id="pw">Senha</span>
+        <button id="copy">Copiar</button>
+        <div class="div" id="btn2">        
+        <button  onClick="refreshPage()">Limpar</button>
+      </div>
+    </div>
+    </div>
+    <div class="pw-body">
+      <div class="form-control">
+        <label for="length">Tamanho da Senha</label>
+        <input id="len" type="number" value="10"  min="8" max="30"/>
+      </div>
+      <div class="form-control">
+        <label for="upper">Contém letra maiúscula</label>
+        <input type="checkbox" id="upper">
+      </div>
+      <div class="form-control">
+        <label for="lower">Contém letra minúscula</label>
+        <input type="checkbox" id="lower">
+      </div>
+      <div class="form-control">
+        <label for="number">Contém números</label>
+        <input type="checkbox" id="number">
+      </div>
+      <div class="form-control">
+        <label for="symbol">Contém símbolos</label>
+        <input type="checkbox" id="symbol">
+      </div>
+      <button class="generate" id="generate">Gerar Senha</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
